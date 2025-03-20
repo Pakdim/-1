@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Главная - PCStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>PCStore</h1>
+  <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог ПК</a></li>
+        <li><a href="constructor.html">Собрать ПК</a></li>
+        <li><a href="cart.html">Корзина</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Компьютеры для любых задач</h2>
+  <marquee behavior="scroll" direction="left">🔥 Акция! Скидки до 30% на игровые сборки! 🔥</marquee>
+</section>
+
+<main>
+  <h2 style="text-align: center;">Наши топ ПК</h2>
+  <div class="product-list">
+    <div class="product">
+      <a href="Gaming_Beast.html"><img src="images/gaming_pc.jpg" alt="Игровой ПК"></a>
+      <h3>Gaming Beast</h3>
+      <p>RTX 4070, AMD Ryzen 5 7600, 32GB RAM, SSD m2 NVMe 1TB</p>
+      <p>Цена: 150000₽</p>
+      <button onclick="addToCart('Gaming Beast', 150000)">В корзину</button>
+    </div>
+
+    <div class="product">
+      <a href="Office_Pro.html"><img src="images/office_pc.jpg" alt="Офисный ПК" ></a>
+      <h3>Office Pro</h3>
+      <p>RTX 3060, Intel i5-14400f, 16GB RAM, SSD 512GB</p>
+      <p>Цена: 80000₽</p>
+      <button onclick="addToCart('Office Pro', 80000)">В корзину</button>
+    </div>
+  </div>
+</main>
+
+<footer class="lowerсontainer">
+  <p>&copy; 2025 PCStore</p>
+</footer>
+
+<div id="notification" class="notification"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

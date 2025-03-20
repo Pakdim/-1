@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог ПК - PCStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1 style="text-align: center;">Каталог готовых ПК</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог ПК</a></li>
+            <li><a href="constructor.html">Собрать ПК</a></li>
+            <li><a href="cart.html">Корзина</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main>
+    <h2 style="text-align: center;">Наши сборки</h2>
+    <div class="product-list">
+        <div class="product" data-price="150000">
+            <img src="images/gaming_pc.jpg" alt="Игровой ПК">
+            <h3>Gaming Beast</h3>
+            <p>RTX 4070, Ryzen 7, 32GB RAM</p>
+            <p>Цена: 150 000₽</p>
+            <button onclick="addToCart('Gaming Beast', 150000)">Добавить в корзину</button>
+        </div>
+        <div class="product">
+            <a href="Office_Pro.html"><img src="images/office_pc.jpg" alt="Офисный ПК" ></a>
+            <h3>Office Pro</h3>
+            <p>RTX 3060, Intel i5-14400f, 16GB RAM, SSD 512GB</p>
+            <p>Цена: 80000₽</p>
+            <button onclick="addToCart('Office Pro', 80000)">В корзину</button>
+          </div>
+        <div class="product" data-price="350000">
+            <a href="Workstation_Pro.html"><img src="images/workstation.jpg" alt="Рабочая станция"></a>
+            <h3>Workstation Pro</h3>
+            <p>RTX 4090, Intel i9-13900k, 64GB RAM, SSD 2TB</p>
+            <p>Цена: 350 000₽</p>
+            <button onclick="addToCart('Workstation Pro', 350000)">Добавить в корзину</button>
+        </div>
+    </div>
+</main>
+    
+</section>
+
+<div id="notification" class="notification"></div>
+
+<script src="script.js"></script>
+</body>
+<footer class="lowerсontainer">
+    <p>&copy; 2025 PCStore</p>
+</footer>
+</html>
