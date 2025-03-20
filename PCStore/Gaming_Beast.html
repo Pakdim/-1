@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Beast - PCStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+  <header>
+    <h1>PCStore</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог ПК</a></li>
+        <li><a href="constructor.html">Собрать ПК</a></li>
+        <li><a href="cart.html">Корзина</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="product-details">
+    <section class="top-section">
+      <div class="image-container">
+        <img src="images/gaming_pc.jpg" alt="Gaming Beast">
+      </div>
+    
+      <div class="info-container">
+        <h2>Gaming Beast</h2>
+        <p class="price">150 000₽</p>
+        <button onclick="addToCart('Gaming Beast', 150000)">Добавить в корзину</button>
+        <p>Топовая игровая машина для любых задач!</p>
+      </div>
+    </section>
+    
+  
+    <hr>
+  
+    <nav class="section-nav">
+      <button onclick="document.getElementById('description').scrollIntoView({behavior: 'smooth'})">Описание</button>
+      <button onclick="document.getElementById('performance').scrollIntoView({behavior: 'smooth'})">Производительность</button>
+      <button onclick="document.getElementById('components').scrollIntoView({behavior: 'smooth'})">Комплектующие</button>
+    </nav>
+  
+    <section id="description">
+      <h3>Описание</h3>
+      <p>Gaming Beast — идеальный выбор для геймеров, которые хотят играть на ультра-настройках в самые требовательные игры. Отлично подходит для стриминга и работы с видео. Эта система собрана для тех, кто требует максимальной производительности и стабильности.</p>
+    </section>
+  
+    <section id="performance">
+      <h3>Производительность</h3>
+      <table class="details-table">
+        <tr><th>Игра / Программа</th><th>Результат</th></tr>
+        <tr><td>Cyberpunk 2077 (Ultra, 1440p)</td><td>85 FPS</td></tr>
+        <tr><td>Call of Duty Warzone (Ultra, 1080p)</td><td>140 FPS</td></tr>
+        <tr><td>Adobe Premiere Pro (рендер 4K)</td><td>8 мин</td></tr>
+        <tr><td>Cinebench R23</td><td>15000 pts</td></tr>
+      </table>
+    </section>
+  
+    <section id="components">
+      <h3>Комплектующие</h3>
+      <table class="details-table">
+        <tr><th>Компонент</th><th>Характеристика</th></tr>
+        <tr><td>Процессор</td><td>AMD Ryzen 5 7600</td></tr>
+        <tr><td>Видеокарта</td><td>NVIDIA RTX 4070</td></tr>
+        <tr><td>Оперативная память</td><td>32GB DDR5</td></tr>
+        <tr><td>SSD</td><td>1TB m2 NVMe</td></tr>
+        <tr><td>Блок питания</td><td>800W Gold</td></tr>
+      </table>
+    </section>
+  </main>
+  
+  <div id="notification" class="notification"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workstation Pro - PCStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <h1>PCStore</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог ПК</a></li>
+        <li><a href="constructor.html">Собрать ПК</a></li>
+        <li><a href="cart.html">Корзина</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="product-details">
+    <section class="top-section">
+      <div class="image-container">
+        <img src="images/workstation.jpg" alt="Workstation Pro">
+      </div>
+    
+      <div class="info-container">
+        <h2>Workstation Pro</h2>
+        <p class="price">350 000₽</p>
+        <button onclick="addToCart('Workstation Pro', 350000)">Добавить в корзину</button>
+        <p>Профессиональная рабочая станция для дизайнеров, 3D-рендеринга, разработки и других ресурсоёмких задач.</p>
+      </div>
+    </section>
+    
+    <hr>
+  
+    <nav class="section-nav">
+      <button onclick="document.getElementById('description').scrollIntoView({behavior: 'smooth'})">Описание</button>
+      <button onclick="document.getElementById('performance').scrollIntoView({behavior: 'smooth'})">Производительность</button>
+      <button onclick="document.getElementById('components').scrollIntoView({behavior: 'smooth'})">Комплектующие</button>
+    </nav>
+  
+    <section id="description">
+      <h3>Описание</h3>
+      <p>Workstation Pro — это мощная рабочая станция для профессионалов. Подходит для сложного моделирования, видеомонтажа в 8K, 3D-анимации и разработки ПО. Максимальная надёжность и производительность без компромиссов.</p>
+    </section>
+  
+    <section id="performance">
+      <h3>Производительность</h3>
+      <table class="details-table">
+        <tr><th>Программа / Игра</th><th>Результат</th></tr>
+        <tr><td>Autodesk 3DS Max (рендер сцены)</td><td>2 мин</td></tr>
+        <tr><td>Adobe After Effects (анимация 4K)</td><td>Быстро</td></tr>
+        <tr><td>Cyberpunk 2077 (Ultra, 4K)</td><td>120 FPS</td></tr>
+        <tr><td>Cinebench R23</td><td>32000 pts</td></tr>
+      </table>
+    </section>
+  
+    <section id="components">
+      <h3>Комплектующие</h3>
+      <table class="details-table">
+        <tr><th>Компонент</th><th>Характеристика</th></tr>
+        <tr><td>Процессор</td><td>Intel i9-13900K</td></tr>
+        <tr><td>Видеокарта</td><td>NVIDIA RTX 4090</td></tr>
+        <tr><td>Оперативная память</td><td>64GB DDR5</td></tr>
+        <tr><td>SSD</td><td>2TB NVMe</td></tr>
+        <tr><td>Блок питания</td><td>1000W Platinum</td></tr>
+      </table>
+    </section>
+  </main>
+  
+  <div id="notification" class="notification"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

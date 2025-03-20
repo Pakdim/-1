@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Корзина - PCStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Корзина</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="catalog.html">Каталог ПК</a></li>
+      <li><a href="constructor.html">Собрать ПК</a></li>
+      <li><a href="cart.html">Корзина</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <ul id="cart-items"></ul>
+  <p id="discount-info">Скидка отсутствует</p>
+  <p>Итоговая сумма: <span id="total-price">0</span>₽</p>
+  <button onclick="checkout()">Оформить заказ</button>
+</main>
+
+<footer class="lowerсontainer">
+  <p>&copy; 2025 PCStore</p>
+</footer>
+
+<div id="notification" class="notification"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
